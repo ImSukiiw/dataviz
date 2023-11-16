@@ -1,314 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP noté Bootstrap</title>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="js/script.js" type="module" defer></script>
+  <!-- Bootstrap  CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/airport-180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/airport-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/airport-16.png">
-    <link rel="icon" href="img/icons/airport-48.ico">
-
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Staatliches&family=VT323&family=Work+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
-
-    <!-- librairies -->
-
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- jquery and scrollify -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
-        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <title>DAMSOVIZ</title>
+  <!-- Mes styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <header class="scrollify bg-header">
-        <img class="black" src="img/Logo.png">
-        <div class="start"><a href="#about">Explore now</a></div>
-    </header>
+
+  <div class="container h-150 d-flex flex-column p-3">
+
+    <nav id="manavbaramoi" class="navbar navbar-light bg-black px-3 fixed-top">
+        <a class="navbar-brand" style="color: #28b513;" href="#">Salut Salut</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#l1">2016</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#l2">2017</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#l3">2018</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#l4">2021</a>
+          </li>
+        </ul>
+      </nav>
 
 
+    <main role="main" class="my-auto text-md-start text-center" style="padding-top: 100px;">
 
-    <!-- about section -->
-
-    <section class="scrollify bg-about" id="about">
-        <article class="about black" data-aos="fade-in" data-aos-delay="500">
-            <h2 class="blue" style="display: inline;">About Dataviz,</h2>
-            <h3 style="display: inline;"> A student project</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus lorem mi, sit amet tempor nulla ullamcorper vel. Maecenas augue turpis, auctor vitae ante in, sollicitudin mattis turpis. Donec venenatis leo in sapien sollicitudin, id molestie dolor viverra. In facilisis enim eget neque tincidunt vestibulum. Vivamus lacus urna, aliquam vitae auctor rhoncus, facilisis sit amet nunc. Maecenas a
-            </h4>
-        </article>
-    </section>
-
-
-
-    <!-- departure board -->
-
-    <section class="scrollify data-departure bg-yellow">
-        <div class="departure-board" data-aos="fade-in" data-aos-delay="500">
-            <div class="departure-title" data-aos="fade-in" data-aos-delay="1000">
-                <img src="./img/icons/departureplane.png">
-                <h3>Departure board</h3>
-            </div>
-            <table>
-                <thead>
-                    <tr data-aos="fade-in" data-aos-delay="1500">
-                        <th class="position">Top</th>
-                        <th class="country">Destination</th>
-                        <th class="visitors">Visitors</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary" style="margin-top: 50px; margin-bottom: 100px; display: flex; justify-content: center; padding: 20px; padding-left: 30px; padding-right: 30px; border-radius: 50px; font-size: 2em;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Clique mon grand
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Coucou</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <article class="black">
-            <h2 data-aos="fade-in" data-aos-delay="2500">Top 10 international arrivals of 2022</h2>
-            <p data-aos="fade-in" data-aos-delay="3000">Every year, millions of tourists leave their home country to
-                find new adventure, romance, entertainment,
-                shopping or other experiences. It comes as no surprise that travelers are drawn in by a combination of
-                factors: <b>stunning landscapes, year-round attractions, historical riches, distinct
-                    cuisine...<br><br></b> Although each country has something to offer to its visitors, some
-                destinations are still more popular than the others. <b>Here are the top 20 most visited countries in
-                    the world.</b></p>
-        </article>
-    </section>
-
-
-
-    <!-- world map -->
-
-    <section class="scrollify data-map bg-black">
-        <article class="green">
-            <div data-aos="fade-in" data-aos-delay="500">
-                <h2><span id="before">Before</span> & <span id="after" class="white after-hover">After</span> Covid19
-                </h2>
-            </div>
-            <h4 data-aos="fade-in" data-aos-delay="1000">In 2020, the tourism industry has collapsed with the COVID-19
-                pandemic,
-                border closures and travel restrictions.<br><br><b><span class="white">Click on the title, and run
-                        the mouse over the map to see the evolution of global tourism
-                        between 2019 and 2020.</span></b></h4>
-        </article>
-        <div class="map" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1500">
-
+        <div class="modal-body">
+          ...
         </div>
-
-        <div class="world-tooltip n0" id="africa-tooltip">
-            <h4>Africa</h4>
-            <p class="africa-number"></p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ferme</button>
+          <button type="button" class="btn btn-primary">Lache ça</button>
         </div>
-
-        <div class="world-tooltip n1" id="north-africa-tooltip">
-            <h4>Middle East</h4>
-            <p class="northafrica-number"></p>
-        </div>
-
-        <div class="world-tooltip n2" id="south-asia-tooltip">
-            <h4>Asia & the Pacific</h4>
-            <p class="southasia-number"></p>
-        </div>
-
-        <div class="world-tooltip n3" id="europe-tooltip">
-            <h4>Europe</h4>
-            <p class="europe-number"></p>
-        </div>
-
-        <div class="world-tooltip n4" id="america-tooltip">
-            <h4>Americas</h4>
-            <p class="america-number"></p>
-        </div>
-
-    </section>
+      </div>
+    </div>
+  </div>
 
 
+      <h1 class="mb-5">Discographie de Damso</h1>
+      <h2>Qui est Damso</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fuga ipsum, voluptatibus dolor
+        eius quam et vitae ullam eveniet ratione, blanditiis obcaecati totam delectus optio, nobis natus beatae amet
+        voluptatum?</p>
 
-    <!-- podium best cities -->
-
-    <section class="scrollify data-podium bg-blue">
-        <div class="podium-page">
-            <h2 class="black" data-aos="fade-in" data-aos-delay="500">Top 3 <span class="white">Most visited
-                    cities</span> over the years</h2>
-            <div class="podiumdesc">
-                <div class="podiumwrap" data-aos="fade-in" data-aos-delay="1000">
-                    <div class="podium rect2">
-                        <div class=" labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists2">
-                            </div>
-                            <div class="step">
-                                2
-                            </div>
-                        </div>
-                    </div>
-                    <div class="podium rect1">
-                        <div class="labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists1">
-                            </div>
-                            <div class="step">
-                                1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="podium rect3">
-                        <div class="labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists3">
-                            </div>
-                            <div class="step">
-                                3
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="desc">
-                </div>
-
-                <div class="info" data-aos="fade-in" data-aos-delay="2000">
-                    <p>Select a year and run the mouse over the podium to see the numbers of visitors of the <b>three
-                            most visited cities in the world,</b> from 2009 to the COVID-19 pandemic.<br><br><b>Hong
-                            Kong broke a record of 31.5 million in 2019!</b>
-                    </p>
+        <div class="row" style="padding-top: 60px;">
+            <div class="card" style="width: 18rem; margin: 20px; color: #242424;">
+                <img class="card-img-top" src="img/batterie faible.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Batterie Faible</h5>
+                <p class="card-text">Album, 2016</p>
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
                 </div>
             </div>
-            <div class="control-date" data-aos="fade-in" data-aos-delay="1500">
-                <input id="cursor" type="range" min="2009" max="2019" step="1" value="2019">
-                <div class="ticks">
-                    <p class="date">2009</p>
-                    <p class="date">2010</p>
-                    <p class="date">2011</p>
-                    <p class="date">2012</p>
-                    <p class="date">2013</p>
-                    <p class="date">2014</p>
-                    <p class="date">2015</p>
-                    <p class="date">2016</p>
-                    <p class="date">2017</p>
-                    <p class="date">2018</p>
-                    <p class="date">2019</p>
+            <div class="card" style="width: 18rem; margin: 20px;">
+                <img class="card-img-top" src="img/ipseite.jpeg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Ipséité</h5>
+                <p class="card-text">Album, 2017</p>
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin: 20px;">
+                <img class="card-img-top" src="img/lithopedion.jpeg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Lithopédion</h5>
+                <p class="card-text">Album, 2018</p>
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin: 20px;">
+                <img class="card-img-top" src="img/qalf.jpeg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">QALF infinity</h5>
+                <p class="card-text">Réédition, 2021</p>
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
                 </div>
             </div>
         </div>
-    </section>
 
-
-
-
-    <!-- reasons to visit -->
-
-    <section class="scrollify data-reasons bg-green">
-        <article>
-            <div class="titles">
-                <h2 class="black" data-aos="fade-in" data-aos-delay="500">Reasons to travel</h2>
-                <h5 class="black" data-aos="fade-in" data-aos-delay="1000">Run the mouse over the themes to see more...
-                </h5>
-            </div>
-            <div class="flexcontent" data-aos="fade-in" data-aos-delay="1000">
-                <div class="h3Buttons">
-                    <h3 class="bouton divholidays white">HOLIDAYS</h3>
-                    <h3 class="bouton divfamily white">FAMILY</h3>
-                    <h3 class="bouton divbusiness white">BUSINESS</h3>
-                    <h3 class="bouton divother white">OTHERS</h3>
-                </div>
-                <div class="percentage">
-                </div>
-            </div>
-        </article>
-        <div class="container" data-aos="fade-in" data-aos-delay="1500">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" style="margin-top: 100px; display: flex; justify-content: center; padding: 20px; padding-left: 30px; padding-right: 30px; border-radius: 50px; font-size: 2em;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Clique ici
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Salut salut</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </section>
-
-
-    <!-- credits -->
-
-    <footer class="scrollify bg-black white">
-        <div>
-            <article>
-
-                <h2 data-aos="fade-in" data-aos-delay="500">AIR DATAVIZ</h2>
-                <h4 data-aos="fade-in" data-aos-delay="1000">A student project by <b>Amel Chabah, Eléa Crunchant & Ambre
-                        Lascoux</b></h4>
-            </article>
-            <article data-aos="fade-in" data-aos-delay="1500">
-                <h3>Data sources & credits</h3>
-                <ul>
-                    <li>Departure Board - <a href="https://travelness.com/most-visited-countries-in-the-world"
-                            target="_blank">Top 10 International arrivals of 2022</a></li>
-                    <li>World Map - <a
-                            href="https://www.statista.com/statistics/186743/international-tourist-arrivals-worldwide-by-region-since-2010/"
-                            target="_blank">Number of international arrivals worldwide before and after Covid19,
-                            by
-                            region</a></li>
-
-                    <li>SVG World Map - <a href="https://codepen.io/evanfleet/pen/bELeoN" target="_blank">Template by
-                            Evan Fleet</a>
-                    </li>
-                    <li>Podium - <a
-                            href="https://www.youtube.com/watch?v=RNPoU8tehRQ&list=LL&index=1&ab_channel=WorldReports"
-                            target="_blank">Top 3 most visited countries over the years - World Reports</a></li>
-                    <li>People - <a href="https://www.enduringwanderlust.com/why-do-people-travel-chart/"
-                            target="_blank">Why do people travel</a></li>
-                </ul>
-            </article>
-
+        <div class="modal-body">
+          ...
         </div>
-        <div>
-            <article data-aos="fade-in" data-aos-delay="2000">
-                <h3>Legislation on personal data</h3>
-                <p><b>Host :</b> github.com - 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br><br>
-                    As part of a student project, this website is edited by <b>Gustave Eiffel University of Champs sur
-                        Marne</b>
-                    and represented by its President.
-                    <br><br>
-                    This website constitutes a work of the spirit within the meaning of the <b>Code of the Intellectual
-                        Property</b> and will remain in the context of university projects : no media will be used for
-                    commercial use.
-                </p>
-            </article>
-            <article data-aos="fade-in" data-aos-delay="2500">
-                <h3>More projects</h3>
-                <ul class="social-media">
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/amelchabah/"
-                            target="_blank">github.com/amelchabah</a></li>
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/eleaacrt"
-                            target="_blank">github.com/eleacrunchant</a></li>
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/aalscx/"
-                            target="_blank">github.com/ambrelascoux</a></li>
-                </ul>
-
-            </article>
-
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ferme</button>
+          <button type="button" class="btn btn-primary">Lache ça</button>
         </div>
+      </div>
+    </div>
+  </div>
+               
+  
+    </main>
+
+    <footer>
+      <p class="text-center mb-0" style="padding-top: 100px;">Fait par moé - 2023</p>
     </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
 </body>
 
-</html>
 
+
+</html>
