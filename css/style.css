@@ -37,6 +37,8 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     scrollbar-width: none !important;
+    background-color: rgb(26, 26, 26);
+    color: white;
 }
 
 :root {
@@ -77,68 +79,6 @@ body {
 .scrollify {
     scroll-snap-align: start;
 
-}
-
-
-/* colors */
-
-.black {
-    color: #ffecec;
-    fill: #ffecec;
-}
-
-.bg-black {
-    background-color: #0a061d;
-}
-
-.white {
-    color: #f1f7ed;
-    fill: #f1f7ed;
-}
-
-.bg-white {
-    background-color: #f1f7ed;
-}
-
-.blue {
-    color: #48cae4;
-    fill: #48cae4;
-
-}
-
-.bg-header {
-    background: linear-gradient(#353535, #202020);
-}
-
-.bg-about {
-    background: linear-gradient(#202020, #121212);
-}
-
-.green {
-    color: #8ee2c2;
-    fill: #8ee2c2;
-}
-
-.bg-green {
-    background-color: #8ee2c2;
-}
-
-.red {
-    color: #ef7373;
-    fill: #ef7373;
-}
-
-.bg-red {
-    background-color: #ef7373;
-}
-
-.yellow {
-    color: #ffe26e;
-    fill: #ffe26e;
-}
-
-.bg-yellow {
-    background-color: #ffe26e;
 }
 
 
@@ -227,35 +167,6 @@ a:focus {
 }
 
 
-/* animations */
-
-@keyframes loader {
-    0% {
-        transform: translate(-50%, 110%);
-    }
-
-    30% {
-        transform: translate(-50%, 50%);
-    }
-
-    100% {
-        transform: translate(-50%, 0%);
-    }
-}
-
-@keyframes splash {
-    0% {
-        transform: translate(0%, 0%);
-    }
-
-    50% {
-        transform: translate(0%, 0%);
-    }
-
-    100% {
-        transform: translate(0%, -100%);
-    }
-}
 
 
 /* blocks */
@@ -869,3 +780,57 @@ table .country {
     }
 }
 
+
+
+
+
+
+/* /nouveau css  */
+
+/* Style pour la carte SVG a choisir */
+#europeanMap {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    gap: 2rem;
+}
+
+path {
+    stroke-width: 30px;
+    stroke: transparent;
+}
+
+/* Style pour les tooltips */
+.tooltip {
+    position: absolute;
+    background-color: #1d1d1d;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+}
+
+
+
+/* podium auditeurs */
+
+#myChart {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+#yearsBar {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#yearsBar button {
+    font-weight: 700;
+    background-color: transparent;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
