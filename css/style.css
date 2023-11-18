@@ -166,6 +166,37 @@ a:focus {
     cursor: pointer;
 }
 
+/* animations */
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, 110%);
+    }
+
+    30% {
+        transform: translate(-50%, 50%);
+    }
+
+    100% {
+        transform: translate(-50%, 0%);
+    }
+}
+
+@keyframes splash {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, -100%);
+    }
+}
+
+
 
 
 
@@ -784,8 +815,15 @@ table .country {
 
 
 
+/* recap damso */
 
-/* /nouveau css  */
+.card {
+    background-color: #363636;
+}
+
+.card-body {
+    color: #fff;
+}
 
 /* Style pour la carte SVG a choisir */
 #europeanMap {
