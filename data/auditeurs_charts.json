@@ -1,280 +1,218 @@
 [
-    { 
-      "artiste": "Damso",
-      "date": "05-2019",
-      "auditeurs": 1517650
-    },
-    { 
-      "artiste": "Damso",
-      "date": "06-2019",
-      "auditeurs": 1640575
-    },
-    { 
-      "artiste": "Damso",
-      "date": "07-2019",
-      "auditeurs": 1725832
-    },
-    { 
-      "artiste": "Damso",
-      "date": "08-2019",
-      "auditeurs": 1951261
-    },
-    { 
-      "artiste": "Damso",
-      "date": "09-2019",
-      "auditeurs": 1879274
-    },{ 
-      "artiste": "Damso",
-      "date": "10-2019",
-      "auditeurs": 1797961
-    },
-    { 
-      "artiste": "Damso",
-      "date": "11-2019",
-      "auditeurs": 1684783
-    },
-    { 
-      "artiste": "Damso",
-      "date": "12-2019",
-      "auditeurs": 1710671
-    },
-    { 
-      "artiste": "Damso",
-      "date": "01-2020",
-      "auditeurs": 1819546
-    },
-    { 
-      "artiste": "Damso",
-      "date": "02-2020",
-      "auditeurs": 1937249
-    },
-    { 
-      "artiste": "Damso",
-      "date": "03-2020",
-      "auditeurs": 1714111
-    },
-    { 
-      "artiste": "Damso",
-      "date": "04-2020",
-      "auditeurs": 1580750
-    },
-    { 
-      "artiste": "Damso",
-      "date": "05-2020",
-      "auditeurs": 1607916
-    },
-    { 
-      "artiste": "Damso",
-      "date": "06-2020",
-      "auditeurs": 1681875
-    },
-    { 
-      "artiste": "Damso",
-      "date": "07-2020",
-      "auditeurs": 1638588
-    },
-    { 
-      "artiste": "Damso",
-      "date": "08-2020",
-      "auditeurs": 1608950
-    },
-    { 
-      "artiste": "Damso",
-      "date": "09-2020",
-      "auditeurs": 2424025
-    },
-    { 
-      "artiste": "Damso",
-      "date": "10-2020",
-      "auditeurs": 2951686
-    },
-    { 
-      "artiste": "Damso",
-      "date": "11-2020",
-      "auditeurs": 2487113
-    },
-    { 
-      "artiste": "Damso",
-      "date": "12-2020",
-      "auditeurs": 2314308
-    },
-    { 
-      "artiste": "Damso",
-      "date": "01-2021",
-      "auditeurs": 2314090
-    },
-    { 
-      "artiste": "Damso",
-      "date": "02-2021",
-      "auditeurs": 2391015
-    },
-    { 
-      "artiste": "Damso",
-      "date": "03-2021",
-      "auditeurs": 2563007
-    },
-    { 
-      "artiste": "Damso",
-      "date": "04-2021",
-      "auditeurs": 2387052
-    },
-    { 
-      "artiste": "Damso",
-      "date": "05-2021",
-      "auditeurs": 3527414
-    },
-    { 
-      "artiste": "Damso",
-      "date": "06-2021",
-      "auditeurs": 2911808
-    },
-    { 
-      "artiste": "Damso",
-      "date": "07-2021",
-      "auditeurs": 2808925
-    },
-    { 
-      "artiste": "Damso",
-      "date": "08-2021",
-      "auditeurs": 2749185
-    },
-    { 
-      "artiste": "Damso",
-      "date": "09-2021",
-      "auditeurs": 2673005
-    },
-    { 
-      "artiste": "Damso",
-      "date": "10-2021",
-      "auditeurs": 2672967
-    },
-    { 
-      "artiste": "Damso",
-      "date": "11-2021",
-      "auditeurs": 2606086
-    },
-    { 
-      "artiste": "Damso",
-      "date": "12-2021",
-      "auditeurs": 4003554
-    },
-    { 
-      "artiste": "Damso",
-      "date": "01-2022",
-      "auditeurs": 3885714
-    },
-    { 
-      "artiste": "Damso",
-      "date": "02-2022",
-      "auditeurs": 4020301
-    },
-    { 
-      "artiste": "Damso",
-      "date": "03-2022",
-      "auditeurs": 4254839
-    },
-    { 
-      "artiste": "Damso",
-      "date": "04-2022",
-      "auditeurs": 4416564
-    },
-    { 
-      "artiste": "Damso",
-      "date": "05-2022",
-      "auditeurs": 4582418
-    },
-    { 
-      "artiste": "Damso",
-      "date": "06-2022",
-      "auditeurs": 4309635
-    },
-    { 
-      "artiste": "Damso",
-      "date": "07-2022",
-      "auditeurs": 4486684
-    },
-    { 
-      "artiste": "Damso",
-      "date": "08-2022",
-      "auditeurs": 4250107
-    },
-    { 
-      "artiste": "Damso",
-      "date": "09-2022",
-      "auditeurs": 4290491
-    },
-    { 
-      "artiste": "Damso",
-      "date": "10-2022",
-      "auditeurs": 4367840
-    },
-    { 
-      "artiste": "Damso",
-      "date": "11-2022",
-      "auditeurs": 4347171
-    },
-    { 
-      "artiste": "Damso",
-      "date": "12-2022",
-      "auditeurs": 4508926
-    },
-    { 
-      "artiste": "Damso",
-      "date": "01-2023",
-      "auditeurs": 4666666
-    },
-    { 
-      "artiste": "Damso",
-      "date": "02-2023",
-      "auditeurs": 4679595
-    },
-    { 
-      "artiste": "Damso",
-      "date": "03-2023",
-      "auditeurs": 5603208
-    },
-    { 
-      "artiste": "Damso",
-      "date": "04-2023",
-      "auditeurs": 5599107
-    },
-    { 
-      "artiste": "Damso",
-      "date": "05-2023",
-      "auditeurs": 5817093
-    },
-    { 
-      "artiste": "Damso",
-      "date": "06-2023",
-      "auditeurs": 5810308
-    },
-    { 
-      "artiste": "Damso",
-      "date": "07-2023",
-      "auditeurs": 5599457
-    },
-    { 
-      "artiste": "Damso",
-      "date": "08-2023",
-      "auditeurs": 5258281
-    },
-    { 
-      "artiste": "Damso",
-      "date": "09-2023",
-      "auditeurs": 5078166
-    },
-    { 
-      "artiste": "Damso",
-      "date": "10-2023",
-      "auditeurs": 4928427
-    }
+  {
+    "date": "05-2019",
+    "auditeurs": 1517650
+  },
+  {
+    "date": "06-2019",
+    "auditeurs": 1640575
+  },
+  {
+    "date": "07-2019",
+    "auditeurs": 1725832
+  },
+  {
+    "date": "08-2019",
+    "auditeurs": 1951261
+  },
+  {
+    "date": "09-2019",
+    "auditeurs": 1879274
+  },
+  {
+    "date": "10-2019",
+    "auditeurs": 1797961
+  },
+  {
+    "date": "11-2019",
+    "auditeurs": 1684783
+  },
+  {
+    "date": "12-2019",
+    "auditeurs": 1710671
+  },
+  {
+    "date": "01-2020",
+    "auditeurs": 1819546
+  },
+  {
+    "date": "02-2020",
+    "auditeurs": 1937249
+  },
+  {
+    "date": "03-2020",
+    "auditeurs": 1714111
+  },
+  {
+    "date": "04-2020",
+    "auditeurs": 1580750
+  },
+  {
+    "date": "05-2020",
+    "auditeurs": 1607916
+  },
+  {
+    "date": "06-2020",
+    "auditeurs": 1681875
+  },
+  {
+    "date": "07-2020",
+    "auditeurs": 1638588
+  },
+  {
+    "date": "08-2020",
+    "auditeurs": 1608950
+  },
+  {
+    "date": "09-2020",
+    "auditeurs": 2424025
+  },
+  {
+    "date": "10-2020",
+    "auditeurs": 2951686
+  },
+  {
+    "date": "11-2020",
+    "auditeurs": 2487113
+  },
+  {
+    "date": "12-2020",
+    "auditeurs": 2314308
+  },
+  {
+    "date": "01-2021",
+    "auditeurs": 2314090
+  },
+  {
+    "date": "02-2021",
+    "auditeurs": 2391015
+  },
+  {
+    "date": "03-2021",
+    "auditeurs": 2563007
+  },
+  {
+    "date": "04-2021",
+    "auditeurs": 2387052
+  },
+  {
+    "date": "05-2021",
+    "auditeurs": 3527414
+  },
+  {
+    "date": "06-2021",
+    "auditeurs": 2911808
+  },
+  {
+    "date": "07-2021",
+    "auditeurs": 2808925
+  },
+  {
+    "date": "08-2021",
+    "auditeurs": 2749185
+  },
+  {
+    "date": "09-2021",
+    "auditeurs": 2673005
+  },
+  {
+    "date": "10-2021",
+    "auditeurs": 2672967
+  },
+  {
+    "date": "11-2021",
+    "auditeurs": 2606086
+  },
+  {
+    "date": "12-2021",
+    "auditeurs": 4003554
+  },
+  {
+    "date": "01-2022",
+    "auditeurs": 3885714
+  },
+  {
+    "date": "02-2022",
+    "auditeurs": 4020301
+  },
+  {
+    "date": "03-2022",
+    "auditeurs": 4254839
+  },
+  {
+    "date": "04-2022",
+    "auditeurs": 4416564
+  },
+  {
+    "date": "05-2022",
+    "auditeurs": 4582418
+  },
+  {
+    "date": "06-2022",
+    "auditeurs": 4309635
+  },
+  {
+    "date": "07-2022",
+    "auditeurs": 4486684
+  },
+  {
+    "date": "08-2022",
+    "auditeurs": 4250107
+  },
+  {
+    "date": "09-2022",
+    "auditeurs": 4290491
+  },
+  {
+    "date": "10-2022",
+    "auditeurs": 4367840
+  },
+  {
+    "date": "11-2022",
+    "auditeurs": 4347171
+  },
+  {
+    "date": "12-2022",
+    "auditeurs": 4508926
+  },
+  {
+    "date": "01-2023",
+    "auditeurs": 4666666
+  },
+  {
+    "date": "02-2023",
+    "auditeurs": 4679595
+  },
+  {
+    "date": "03-2023",
+    "auditeurs": 5603208
+  },
+  {
+    "date": "04-2023",
+    "auditeurs": 5599107
+  },
+  {
+    "date": "05-2023",
+    "auditeurs": 5817093
+  },
+  {
+    "date": "06-2023",
+    "auditeurs": 5810308
+  },
+  {
+    "date": "07-2023",
+    "auditeurs": 5599457
+  },
+  {
+    "date": "08-2023",
+    "auditeurs": 5258281
+  },
+  {
+    "date": "09-2023",
+    "auditeurs": 5078166
+  },
+  {
+    "date": "10-2023",
+    "auditeurs": 4928427
+  }
 ]
-
-
- 
-  
-  
-  
-  
-  
-  
