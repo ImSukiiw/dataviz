@@ -33,7 +33,11 @@
         <article class="black" data-aos="fade-in" data-aos-delay="500">
             <h2 class="blue">DATAVIZ,</h2>
             <h2 class="white"> NOTRE PROJET ÉTUDIANT</h2>
-            <p>DataViz est le projet de développement web de notre 3ème semestre de BUT MMI. Son objectif est de créer une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas, nous avons choisi comme thème le rappeur Belge Damso et avons décidé d'afficher des données sur l'évolution de ses statistiques au fil du temps. Nous sommes un duo, Patrick Faure et Maxime Scholtes, et nous sommes dans le parcours création numérique du BUT MMI.</p>
+            <p>DataViz est le projet de développement web de notre 3ème semestre de BUT MMI. Son objectif est de créer
+                une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas,
+                nous avons choisi comme thème le rappeur Belge Damso et avons décidé d'afficher des données sur
+                l'évolution de ses statistiques au fil du temps. Nous sommes un duo, Patrick Faure et Maxime Scholtes,
+                et nous sommes dans le parcours création numérique du BUT MMI.</p>
         </article>
     </section>
 
@@ -48,7 +52,9 @@
         </div>
         <div class="info" data-aos="fade-in" data-aos-delay="300">
             <div class="lead">
-                <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et auteur-compositeur-interprète belgo-congolais. Actif dans le monde du rap depuis 2006, Damso débute dans la publication de projets avec sa première mixtape, "Salle d'attente", sortie en 2014.</p>
+                <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et
+                    auteur-compositeur-interprète belgo-congolais. Actif dans le monde du rap depuis 2006, Damso débute
+                    dans la publication de projets avec sa première mixtape, "Salle d'attente", sortie en 2014.</p>
             </div>
             <div class="lead2" data-aos="fade-in" data-aos-delay="300">
                 <h4>Date de naissance</h4>
@@ -119,7 +125,8 @@
     <section class="scroll data_charts" id="charts">
         <div class="charts-title" data-aos="fade-in" data-aos-delay="300">
             <h2>Évolution du nombre d'auditeurs sur Spotify</h2>
-            <p>Cette représentation de donnée consiste en l'évolution du nombres d'auditeurs en fonction du temps de Damso. On y retrouve les données de tous les mois de Mai 2019 jusqu'à Août 2023.</p>
+            <p>Cette représentation de donnée consiste en l'évolution du nombres d'auditeurs en fonction du temps de
+                Damso. On y retrouve les données de tous les mois de Mai 2019 jusqu'à Août 2023.</p>
         </div>
         <canvas id="auditeursChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
     </section>
@@ -132,12 +139,9 @@
                 <article>
                     <h3 id="infoContainer">Clique sur un pays !</h3>
                     <br>
-                    <p id="infoDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt vero
-                        omnis
-                        rem inventore
-                        repudiandae aperiam incidunt accusamus quod quis. Quod, magni obcaecati. Veniam quis error
-                        deleniti
-                        aspernatur itaque at.</p>
+                    <p id="infoDescription">Cette carte de l'Europe représente le nombres d'auditeurs de Damso par pays
+                        sur l'année 2023. Elle est interactive c'est à dire que vous pouvez cliquer dessus pour afficher
+                        les données en fonction du pays choisi.</p>
                 </article>
             </div>
             <div id="europeanMap" data-aos="fade-in" data-aos-delay="300"></div>
@@ -150,15 +154,36 @@
     <section class="scroll podium_section">
         <div class="podium-title" data-aos="fade-in" data-aos-delay="300">
             <h2>Top 4 des Villes avec le plus d'auditeurs en 2023</h2>
-            <p>L'histogramme ci-dessous montre les 4 villes où Damso est le plus écoutés dans le monde en 2023. Ce sont les données du mois d'Octobre 2023, il n'y a pas de données concernant les périodes précédentes.</p>
+            <p>L'histogramme ci-dessous montre les 4 villes où Damso est le plus écoutés dans le monde en 2023. Ce sont
+                les données du mois d'Octobre 2023, il n'y a pas de données concernant les périodes précédentes.</p>
         </div>
         <canvas id="myChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
     </section>
 
     <!-- footer -->
-    <footer class="scroll footer" data-aos="fade-in" data-aos-delay="300">
+    <section class="scroll">
+        <footer class="scroll footer" data-aos="fade-in" data-aos-delay="300">
+            <div>
+                <h4 class="credit-dataviz">© 2023 - DataViz</h4>
+                <h4>
+                <label for="mentionsLegalesCheckbox">Mentions Légales</label>
+                </h4>
+            </div>
+        </footer>
+    </section>
 
-    </footer>
+
+    <!-- popup -->
+    <input type="checkbox" id="mentionsLegalesCheckbox" class="popup-trigger">
+    <div class="popup">
+        <label for="mentionsLegalesCheckbox" class="popup-overlay"></label>
+        <div class="popup-content">
+            <h2>Mentions Légales</h2>
+            <!-- Ajoutez ici le contenu de vos mentions légales -->
+
+            <label for="mentionsLegalesCheckbox" class="popup-close">Fermer</label>
+        </div>
+    </div>
 </body>
 
 </html>
