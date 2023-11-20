@@ -82,7 +82,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Batterie Faible</h5>
                         <p class="card-text">Album, 2016</p>
-                        <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/4beTtJKeg3ITJsiVuxkiV0"
                             class="btn"> Écouter ▶</a>
                     </div>
@@ -92,7 +91,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Ipséité</h5>
                         <p class="card-text">Album, 2017</p>
-                        <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/7ovdjtmV0Bkm4Xb4pqtrZt"
                             class="btn">Écouter ▶</a>
                     </div>
@@ -102,7 +100,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Lithopédion</h5>
                         <p class="card-text">Album, 2018</p>
-                        <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/2zgjFPyhn0cMxKzW2IiGUT"
                             class="btn">Écouter ▶</a>
                     </div>
@@ -112,7 +109,6 @@
                     <div class="card-body">
                         <h5 class="card-title">QALF infinity</h5>
                         <p class="card-text">Réédition, 2021</p>
-                        <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/5Sb84P0BZuvCnYV0xJcNT1"
                             class="btn">Écouter ▶</a>
                     </div>
@@ -139,9 +135,10 @@
                 <article>
                     <h3 id="infoContainer">Clique sur un pays !</h3>
                     <br>
-                    <p id="infoDescription">Cette carte de l'Europe représente le nombres d'auditeurs de Damso par pays
+                    <p id="infoDescription">Cette carte de l'Europe représente le nombre d'auditeurs de Damso par pays
                         sur l'année 2023. Elle est interactive c'est à dire que vous pouvez cliquer dessus pour afficher
-                        les données en fonction du pays choisi.</p>
+                        les données en fonction du pays choisi. Si l'interaction ne fonctionne pas, rafraichissez la
+                        page.</p>
                 </article>
             </div>
             <div id="europeanMap" data-aos="fade-in" data-aos-delay="300"></div>
@@ -161,16 +158,12 @@
     </section>
 
     <!-- footer -->
-    <section class="scroll">
-        <footer class="scroll footer" data-aos="fade-in" data-aos-delay="300">
-            <div>
-                <h4 class="credit-dataviz">© 2023 - DataViz</h4>
-                <h4>
-                <label for="mentionsLegalesCheckbox">Mentions Légales</label>
-                </h4>
-            </div>
-        </footer>
-    </section>
+    <footer class="scroll footer">
+        <h4 class="credit-dataviz">© 2023 - DataViz</h4>
+        <h4>
+            <label for="mentionsLegalesCheckbox">Mentions Légales</label>
+        </h4>
+    </footer>
 
 
     <!-- popup -->
@@ -178,10 +171,54 @@
     <div class="popup">
         <label for="mentionsLegalesCheckbox" class="popup-overlay"></label>
         <div class="popup-content">
-            <h2>Mentions Légales</h2>
-            <!-- Ajoutez ici le contenu de vos mentions légales -->
-
-            <label for="mentionsLegalesCheckbox" class="popup-close">Fermer</label>
+            <h3>Mentions Légales</h3>
+            <h4>
+                Éditeurs du site web
+            </h4>
+            <p>
+                <b>Patrick FAURE et Maxime SCHOLTES,</b> Étudiants en BUT MMI <br>
+                <b>N° de tél :</b> 07 68 28 40 16 <br>
+                <b>Mail de contact :</b> <a href="mailto:damsoviz@gmail.com">damsoviz@gmail.com</a><br>
+                <b>Design :</b> Patrick Faure et Maxime Scholtes <br>
+                <b>Développement Web :</b> Patrick Faure et Maxime Scholtes
+            </p>
+            <h4>
+                Hébergeurs
+            </h4>
+            <p>
+                O2Switch pour les utilisateurs, ainsi que Github Pages pour le rendu de notre projet. <br>
+                O2SWITCH (O2SWITCH), CHE DES PARDIAUX 63000 CLERMONT-FERRAND <br>
+                04 44 44 60 40 <br>
+                support@o2switch.fr
+            </p>
+            <h4>
+                Source des données
+            </h4>
+            <p>
+                Toutes les données que nous traitons et utilisons sur notre site sont la propriété de Spotify, les
+                données viennent du site de <a target="_blank" href="https://soundcharts.com">Soundcharts</a> accessible
+                via un abonnement. Elles sont utilisées sur notre site web à but informatif uniquement dans le cadre
+                d’un projet étudiant proposé par l’IUT de Champs Sur Marne.
+            </p>
+            <h4>
+                Politique de Confidentialité
+            </h4>
+            <p>
+                Nous récupérons les données de l'artiste Damso via le site de Soundcharts, affichant des graphiques sur
+                notre site. Aucune donnée utilisateur n'est collectée. Nous utilisons des cookies pour améliorer
+                l'expérience, et toutes les informations sont sécurisées. Aucune donnée n'est partagée.
+            </p>
+            <h4>
+                Crédits
+            </h4>
+            <p>
+                Pour les couvertures des albums Batterie Faible et Ipséité, c’est l’artiste Damso lui-même qui les a
+                réalisé. Pour les albums Lithopédion et QALF, c’est le graphiste <a target="_blank" href="https://romaingarcin.com/work">Romain Garcin</a> qui les a réalisé. Également un grand merci à
+                <a target="_blank" href="https://github.com/amelchabah">Amel CHABAH</a>, qui nous a aidé pour certaines
+                parties de codes concernant le
+                JavaScript.
+            </p>
+            <label for="mentionsLegalesCheckbox" class="popup-close fermer">Fermer</label>
         </div>
     </div>
 </body>

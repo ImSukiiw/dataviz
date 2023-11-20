@@ -1,20 +1,11 @@
-/*longue feuille de style, mais triée :
-- scrollbar
-- couleurs
-- textes
-- animations
-- blocs
-- sections de données
-- responsive
-*/
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 html {
     height: 100%;
@@ -33,6 +24,7 @@ body {
     scrollbar-width: none !important;
     background-color: rgb(17, 17, 17);
     color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 article {
@@ -75,24 +67,20 @@ p {
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -101,38 +89,31 @@ h4 {
 h5 {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
 h6 {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
 b {
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
     font-weight: 700;
 }
 
 ul {
     list-style: none;
     line-height: 2rem;
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding-left: 0;
 }
-
 .about p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-align: justify;
     line-height: 1.2em;
@@ -151,9 +132,8 @@ ul {
 /* links */
 
 a {
-    font-family: 'work sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;
     line-height: 1.5;
 }
 
@@ -217,37 +197,22 @@ section {
     justify-content: center;
 }
 
-section footer {
-    height: 15vh;
-}
-
 footer {
-    width: 90vw;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 15vh;
+    justify-content: space-between;
+    height: 150px;
     gap: 4rem;
-    position: relative;
 }
 
-footer div {
-    display: flex;
-    margin-bottom: 1rem;
-}
-
-footer div .credit-dataviz {
-position: absolute;
-left: 0;
-}
-
-footer div label {
-    position: absolute;
-    right: 0;
+footer label {
     cursor: pointer;
 }
 
-footer div label:hover {
+footer label:hover {
     color: #48CAE4;
 }
 
@@ -267,13 +232,8 @@ article p {
 
 .presentation img {
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
-}
-
-.presentation article {
-    margin-top: 1rem;
-    padding-bottom: 2rem;
+    height: 100px;
+    width: 100px;
 }
 
 .header {
@@ -286,6 +246,7 @@ article p {
 
 .disco-damso {
     background: linear-gradient(180deg, #131313 11.98%, #121212 76.56%);
+    gap: 10px;
 }
 
 .data-charts {
@@ -298,12 +259,9 @@ article p {
 /* recap damso */
 
 .lead {
-    width: 540px;
-}
-
-.lead p {
     text-align: justify;
     line-height: 1.5rem;
+    width: 50%;
 }
 
 .lead2 p {
@@ -317,6 +275,7 @@ article p {
 
 .info {
     /* height: 110px; */
+    gap: 20px;
     display: flex;
     justify-content: space-around;
 
@@ -347,7 +306,7 @@ article p {
 }
 
 .card {
-    width: 100%;
+    width: 20%;
     height: auto;
     background-color: #242424;
     border-radius: 15px;
@@ -356,7 +315,7 @@ article p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .card-body {
@@ -365,7 +324,7 @@ article p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 0.2rem;
+    gap: 0.5rem;
 }
 
 .card-img-top {
@@ -427,7 +386,10 @@ article p {
 
 .charts-title {
     padding-bottom: 3rem;
-    ;
+}
+
+.charts-title p, .podium-title p {
+    width: 60%;
 }
 
 
@@ -436,44 +398,48 @@ article p {
 .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
-}
-
-.wrapper article {
-    width: 50%;
+    width: 100%;
 }
 
 .article-line {
+    width: 50%;
     border-left: #48CAE4 solid 5px;
 }
 
 .article-line article {
     margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+#infoContainer {
+    font-weight: 600;
 }
 
 /* podium section */
 
 .podium-title {
     padding-bottom: 3rem;
-    ;
 }
 
 
 /* Style pour la carte SVG a choisir */
 #europeanMap {
-    width: 90%;
+    width: 50%;
     height: auto;
     display: flex;
     gap: 2rem;
-    cursor: pointer;
 }
 
 #europeanMap svg {
     width: 100%;
 }
 
+#europeanMap svg g {
+    cursor: pointer;
+}
 path {
     stroke-width: 10px;
     stroke: transparent;
@@ -518,6 +484,7 @@ path {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    color: white;
 }
 
 .popup-trigger {
@@ -526,6 +493,12 @@ path {
 
 .popup-trigger:checked + .popup {
     display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.fermer:hover {
+    color: #48CAE4;
+    transition: 0.2s ease;
 }
 
 .popup-overlay {
@@ -534,28 +507,73 @@ path {
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: default;
+    cursor: pointer;
 }
 
 .popup-content {
     background-color: #fff;
     padding: 20px;
-    max-width: 600px;
-    width: 100%;
+    max-width: 90%;
+    width: 900px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
     position: relative;
+    border-radius: 8px;
+    color: #333;
+}
+
+.popup h4 {
+    color: #333;
+    font-weight:600;
+}
+
+.popup p {
+    margin-bottom: 10px;
 }
 
 .popup-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 17px;
+    right: 20px;
     cursor: pointer;
-    color: #333;
+    color: #555;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.popup-content {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-trigger:checked + .popup .popup-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup h3 {
+    margin-bottom: 10px;
+}
+
+.popup a {
+    font-weight: 600;
+}
+.popup a:hover {
+    color: #2c9eb5;
 }
 
 
+/* animation fadein pour l'ouverture du popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width:900px) {
     h1 {
