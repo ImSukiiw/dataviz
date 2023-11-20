@@ -242,8 +242,12 @@ footer .social {
 
 .presentation img {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+.presentation article {
+    margin-top: 1.3rem;
 }
 
 .header {
@@ -313,6 +317,7 @@ footer .social {
     width: 90%;
     margin: 0 auto;
 }
+
 .card {
     width: 100%;
     height: auto;
@@ -487,7 +492,9 @@ path {
     .info {
         margin-bottom: 1rem;
     }
-    .row, .info {
+
+    .row,
+    .info {
         flex-direction: column;
         height: 100%;
         gap: 1rem;
@@ -513,7 +520,8 @@ path {
         height: 100%;
     }
 
-    footer article, footer div {
+    footer article,
+    footer div {
         width: 100% !important;
     }
 

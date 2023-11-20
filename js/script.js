@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-      AOS.init();
+    AOS.init();
 
 
     // récupérer les données de chaque json et les renvoyer dans 3 fonctions :
@@ -140,7 +140,7 @@ function configureMapEvents(dataMap) {
 
             // afficher le nombre d'auditeurs moyens en 2023 dans l'élément h1
             infoContainer.textContent = `${countryName} : ${auditeursmensuel}`;
-            infoDescription.textContent = `En 2023, le nombres d'auditeurs moyens par mois sur Spotify pour le rappeur Belge Damso en ${countryName} était de ${auditeursmensuel} auditeurs mensuels moyens.`;
+            infoDescription.textContent = `En 2023, le nombres d'auditeurs moyens par mois sur Spotify pour le rappeur Belge Damso en ${countryName} était de ${auditeursmensuel}.`;
 
             // stockage du pays actuellement sélectionné
             lastSelectedCountry = country;
