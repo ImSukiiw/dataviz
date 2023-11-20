@@ -1,263 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- css et script js -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/script.js" type="module" defer></script>
-
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/airport-180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/airport-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/airport-16.png">
-    <link rel="icon" href="img/icons/airport-48.ico">
-
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Staatliches&family=VT323&family=Work+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
-
-    <!-- librairies -->
-
-    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- jquery and scrollify -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
-        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <title>DAMSOVIZ</title>
+    <!-- favicons -->
+    <link rel="icon" href="img/damsoviz-logo.svg">
+    <title>DamsoViz</title>
+
 </head>
 
 <body>
-    
-    <header class="scrollify bg-header">
-        <img class="black" src="img/Logo.png">
-        <div class="start"><a href="#about">Explore now</a></div>
+    <header class="scroll header">
+        <img class="black" src="img/logo.png">
+        <div class="start"><a href="#about">Découvrir</a></div>
     </header>
 
+    <!-- a propos de nous -->
 
-
-    <!-- about section -->
-
-    <section class="scrollify bg-about" id="about">
-        <article class="about black" data-aos="fade-in" data-aos-delay="500">
-            <h2 class="blue" style="display: inline;">About Dataviz,</h2>
-            <h3 style="display: inline;"> A student project</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus lorem mi, sit amet tempor nulla ullamcorper vel. Maecenas augue turpis, auctor vitae ante in, sollicitudin mattis turpis. Donec venenatis leo in sapien sollicitudin, id molestie dolor viverra. In facilisis enim eget neque tincidunt vestibulum. Vivamus lacus urna, aliquam vitae auctor rhoncus, facilisis sit amet nunc. Maecenas a
-            </h4>
+    <section class="scroll about" id="about">
+        <article class="black" data-aos="fade-in" data-aos-delay="500">
+            <h2 class="blue">DATAVIZ,</h2>
+            <h3 style="display: inline;"> NOTRE PROJET ÉTUDIANT</h3>
+            <p>DataViz est le projet de Dévelopement Web de notre 3ème semestre de BUT MMI. Son objectif est de créer
+                une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas,
+                nous avons choisi comme thème le rappeur Belge Damso et avons décider d'afficher des données sur
+                l'évolution de ses stats au fil du temps.</p>
         </article>
     </section>
 
+    <!-- qui est damso ? -->
 
-
-    <!-- departure board -->
-
-    <section class="scrollify data-departure bg-yellow">
-        <div class="departure-board" data-aos="fade-in" data-aos-delay="500">
-            <div class="departure-title" data-aos="fade-in" data-aos-delay="1000">
-                <img src="./img/icons/departureplane.png">
-                <h3>Departure board</h3>
+    <section class="scroll disco-damso" id="discoverdamso">
+        <div class="presentation" data-aos="fade-in" data-aos-delay="300">
+            <img src="img/discographie-damso.png" alt="">
+            <article>
+                <h1>Damso</h1>
+                <h3><b>5 078 166</b> auditeurs mensuels ○ <b>116</b> musiques</h3>
+            </article>
+        </div>
+        <div class="info" data-aos="fade-in" data-aos-delay="300">
+            <div class="lead">
+                <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et
+                    auteur-compositeur-interprète belgo-congolais. Actif dans le monde du rap depuis 2006, Damso débute
+                    dans la publication de projets avec sa première mixtape Salle d'attente, sortie en 2014.</p>
             </div>
-            <table>
-                <thead>
-                    <tr data-aos="fade-in" data-aos-delay="1500">
-                        <th class="position">Top</th>
-                        <th class="country">Destination</th>
-                        <th class="visitors">Visitors</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-        <article class="black">
-            <h2 data-aos="fade-in" data-aos-delay="2500">Top 10 international arrivals of 2022</h2>
-            <p data-aos="fade-in" data-aos-delay="3000">Every year, millions of tourists leave their home country to
-                find new adventure, romance, entertainment,
-                shopping or other experiences. It comes as no surprise that travelers are drawn in by a combination of
-                factors: <b>stunning landscapes, year-round attractions, historical riches, distinct
-                    cuisine...<br><br></b> Although each country has something to offer to its visitors, some
-                destinations are still more popular than the others. <b>Here are the top 20 most visited countries in
-                    the world.</b></p>
-        </article>
-    </section>
-
-
-
-    <!-- world map -->
-
-    <section class="scrollify data-map bg-black">
-        <article class="green">
-            <div data-aos="fade-in" data-aos-delay="500">
-                <h2><span id="before">Before</span> & <span id="after" class="white after-hover">After</span> Covid19
-                </h2>
+            <div class="lead2" data-aos="fade-in" data-aos-delay="300">
+                <h4>Date de naissance</h4>
+                <p>10 Mai 1992 (31 ans)</p>
+                <h4>Lieu de naissance</h4>
+                <p>Kinshasa, RDC</p>
             </div>
-            <h4 data-aos="fade-in" data-aos-delay="1000">In 2020, the tourism industry has collapsed with the COVID-19
-                pandemic,
-                border closures and travel restrictions.<br><br><b><span class="white">Click on the title, and run
-                        the mouse over the map to see the evolution of global tourism
-                        between 2019 and 2020.</span></b></h4>
-        </article>
-        <div class="map" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1500">
-
+            <a class="lead3" target="_blank" data-aos="fade-in" data-aos-delay="300"
+                href="https://open.spotify.com/intl-fr/track/2ewjMyCbNv2X1dB2qIDCwD?si=90762852c5a74cc8">
+                <img class="card-img-top" src="img/macarena.jpeg" alt="">
+                <div>
+                    <h4>0. Macarena</h4>
+                    <p>Ipséité ○ 2017</p>
+                    <h4>200 953 446 streams</h4>
+                </div>
+            </a>
         </div>
 
-        <div class="world-tooltip n0" id="africa-tooltip">
-            <h4>Africa</h4>
-            <p class="africa-number"></p>
+        <div class="projets" data-aos="fade-in" data-aos-delay="300">
+            <a target="_blank" href="https://open.spotify.com/intl-fr/artist/2UwqpfQtNuhBwviIC0f2ie/discography/album"
+                class="btn-projets">
+                Projets
+            </a>
+            <div class="row">
+                <div class="card">
+                    <img class="card-img" src="img/batterie faible.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Batterie Faible</h5>
+                        <p class="card-text">Album, 2016</p>
+                        <br>
+                        <a target="_blank" href="https://open.spotify.com/intl-fr/album/4beTtJKeg3ITJsiVuxkiV0"
+                            class="btn btn-primary"> Écouter ▶</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="img/ipseite.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ipséité</h5>
+                        <p class="card-text">Album, 2017</p>
+                        <br>
+                        <a target="_blank" href="https://open.spotify.com/intl-fr/album/7ovdjtmV0Bkm4Xb4pqtrZt"
+                            class="btn btn-primary">Écouter ▶</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="img/lithopedion.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lithopédion</h5>
+                        <p class="card-text">Album, 2018</p>
+                        <br>
+                        <a target="_blank" href="https://open.spotify.com/intl-fr/album/2zgjFPyhn0cMxKzW2IiGUT"
+                            class="btn btn-primary">Écouter ▶</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="img/qalf.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">QALF infinity</h5>
+                        <p class="card-text">Réédition, 2021</p>
+                        <br>
+                        <a target="_blank" href="https://open.spotify.com/intl-fr/album/5Sb84P0BZuvCnYV0xJcNT1"
+                            class="btn btn-primary">Écouter ▶</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="world-tooltip n1" id="north-africa-tooltip">
-            <h4>Middle East</h4>
-            <p class="northafrica-number"></p>
+    <section class="scroll data_charts" id="charts">
+        <div class="charts-title" data-aos="fade-in" data-aos-delay="300">
+            <h2>
+                Évolution du nombre d'auditeurs sur Spotify
+            </h2>
         </div>
+        <canvas id="auditeursChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
+    </section>
 
-        <div class="world-tooltip n2" id="south-asia-tooltip">
-            <h4>Asia & the Pacific</h4>
-            <p class="southasia-number"></p>
-        </div>
 
-        <div class="world-tooltip n3" id="europe-tooltip">
-            <h4>Europe</h4>
-            <p class="europe-number"></p>
-        </div>
-
-        <div class="world-tooltip n4" id="america-tooltip">
-            <h4>Americas</h4>
-            <p class="america-number"></p>
+    <section class="scroll map_section">
+        <h2 data-aos="fade-in">Statistiques par Pays</h2>
+        <div class="wrapper" data-aos="fade-in" data-aos-delay="300">
+            <article>
+                <h3 id="infoContainer">Clique sur un pays!</h3>
+                <br>
+                <p id="infoDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt vero omnis
+                    rem inventore
+                    repudiandae aperiam incidunt accusamus quod quis. Quod, magni obcaecati. Veniam quis error deleniti
+                    aspernatur itaque at.</p>
+            </article>
+            <div id="europeanMap" data-aos="fade-in" data-aos-delay="300"></div>
         </div>
 
     </section>
-
 
 
     <!-- podium best cities -->
-
-    <section class="scrollify data-podium bg-blue">
-        <div class="podium-page">
-            <h2 class="black" data-aos="fade-in" data-aos-delay="500">Top 3 <span class="white">Most visited
-                    cities</span> over the years</h2>
-            <div class="podiumdesc">
-                <div class="podiumwrap" data-aos="fade-in" data-aos-delay="1000">
-                    <div class="podium rect2">
-                        <div class=" labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists2">
-                            </div>
-                            <div class="step">
-                                2
-                            </div>
-                        </div>
-                    </div>
-                    <div class="podium rect1">
-                        <div class="labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists1">
-                            </div>
-                            <div class="step">
-                                1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="podium rect3">
-                        <div class="labelpays">
-                            <span>unknown</span>
-                        </div>
-                        <div class="top">
-                            <div class="nbtourists3">
-                            </div>
-                            <div class="step">
-                                3
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="desc">
-                </div>
-
-                <div class="info" data-aos="fade-in" data-aos-delay="2000">
-                    <p>Select a year and run the mouse over the podium to see the numbers of visitors of the <b>three
-                            most visited cities in the world,</b> from 2009 to the COVID-19 pandemic.<br><br><b>Hong
-                            Kong broke a record of 31.5 million in 2019!</b>
-                    </p>
-                </div>
-            </div>
-            <div class="control-date" data-aos="fade-in" data-aos-delay="1500">
-                <input id="cursor" type="range" min="2009" max="2019" step="1" value="2019">
-                <div class="ticks">
-                    <p class="date">2009</p>
-                    <p class="date">2010</p>
-                    <p class="date">2011</p>
-                    <p class="date">2012</p>
-                    <p class="date">2013</p>
-                    <p class="date">2014</p>
-                    <p class="date">2015</p>
-                    <p class="date">2016</p>
-                    <p class="date">2017</p>
-                    <p class="date">2018</p>
-                    <p class="date">2019</p>
-                </div>
-            </div>
+    <section class="scroll podium_section">
+        <div class="podium-title" data-aos="fade-in" data-aos-delay="300">
+            <h2>Top 4 des Villes avec le plus d'auditeurs de Damso
+            </h2>
         </div>
+        <canvas id="myChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
     </section>
 
-
-
-
-    <!-- reasons to visit -->
-
-    <section class="scrollify data-reasons bg-green">
-        <article>
-            <div class="titles">
-                <h2 class="black" data-aos="fade-in" data-aos-delay="500">Reasons to travel</h2>
-                <h5 class="black" data-aos="fade-in" data-aos-delay="1000">Run the mouse over the themes to see more...
-                </h5>
-            </div>
-            <div class="flexcontent" data-aos="fade-in" data-aos-delay="1000">
-                <div class="h3Buttons">
-                    <h3 class="bouton divholidays white">HOLIDAYS</h3>
-                    <h3 class="bouton divfamily white">FAMILY</h3>
-                    <h3 class="bouton divbusiness white">BUSINESS</h3>
-                    <h3 class="bouton divother white">OTHERS</h3>
-                </div>
-                <div class="percentage">
-                </div>
-            </div>
-        </article>
-        <div class="container" data-aos="fade-in" data-aos-delay="1500">
-        </div>
-    </section>
-
-
-    <!-- credits -->
-
-    <footer class="scrollify bg-black white">
+    <!-- footer -->
+    <footer class="scroll footer" data-aos="fade-in" data-aos-delay="300">
         <div>
             <article>
 
-                <h2 data-aos="fade-in" data-aos-delay="500">AIR DATAVIZ</h2>
-                <h4 data-aos="fade-in" data-aos-delay="1000">A student project by <b>Amel Chabah, Eléa Crunchant & Ambre
-                        Lascoux</b></h4>
+                <h2 data-aos="fade-in" data-aos-delay="500">DAMSOVIZ</h2>
+                <h4 data-aos="fade-in" data-aos-delay="1000">Un porjet étudiant réalisé par <b>Patrick FAURE, Maxime
+                        SCHOLTES</b></h4>
             </article>
             <article data-aos="fade-in" data-aos-delay="1500">
-                <h3>Data sources & credits</h3>
+                <h3>Données et Mentions Légales</h3>
                 <ul>
                     <li>Departure Board - <a href="https://travelness.com/most-visited-countries-in-the-world"
                             target="_blank">Top 10 International arrivals of 2022</a></li>
@@ -311,4 +224,3 @@
 </body>
 
 </html>
-
