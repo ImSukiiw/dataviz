@@ -38,6 +38,10 @@ body {
     color: white;
 }
 
+article {
+    transition: 0.5s ease;
+}
+
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -72,32 +76,30 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+    margin: 2px;
 }
 
 h1 {
-    text-transform: uppercase;
     font-family: 'Integral', sans-serif;
     font-size: 4rem;
 }
 
 h2 {
-    text-transform: uppercase;
     font-family: 'Integral', sans-serif;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 h3 {
-    text-transform: uppercase;
     font-family: 'Integral', sans-serif;
     font-size: 2rem;
+    font-weight: 300;
 }
 
 h4 {
     font-family: 'work sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -117,7 +119,13 @@ h6 {
 
 p {
     font-family: 'work sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+}
+
+b {
+    font-family: 'Integral', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 ul {
@@ -126,6 +134,13 @@ ul {
     font-family: 'work sans', sans-serif;
     margin: 0;
     padding-left: 0;
+}
+
+.about p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.2em;
 }
 
 /* links */
@@ -178,6 +193,42 @@ section {
     justify-content: center;
 }
 
+footer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 6rem;
+    gap: 4rem;
+}
+
+footer div:nth-child(2) {
+    width: 30%;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+footer article {
+    margin-bottom: 3.5rem;
+    font-size: 90%;
+}
+
+footer .social-media li {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+}
+
+footer .social {
+    height: 1.2rem;
+    margin-right: 1rem;
+}
+
+
 .presentation {
     display: flex;
     gap: 2rem;
@@ -190,32 +241,86 @@ section {
     width: 100px;
 }
 
+.header {
+    background: linear-gradient(180deg, #353535 0%, #202020 73.23%);
+}
+
+.about {
+    background: linear-gradient(180deg, #212121 0%, #121212 100%);
+}
+
+.disco-damso {
+    background: linear-gradient(180deg, #131313 11.98%, #121212 76.56%);
+}
+
+.data-charts {
+    background: linear-gradient(180deg, #363636 13.02%, #1E1E1E 60.33%);
+}
+
 
 
 
 /* recap damso */
 
+.lead {
+    width: 540px;
+}
+
+.lead p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+.lead2 p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+.lead3 p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.info { 
+    padding-top: 20px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+.lead3 { 
+    display: flex;
+}
+
 .row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 auto;
+    justify-content: space-around;
+    gap: 8rem;
+    margin: auto;
     margin-top: 2rem;
 }
 
+.projets {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.btn-projets h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 .card {
-    background-color: #252525;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    width: 50%;
+    background-color: #242424;
+    border-radius: 15px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card-body {
@@ -229,19 +334,53 @@ section {
 
 .card-img-top {
     width: 100%;
-    height: 100%;
+    height: 90%;
+    padding-right: 20px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card .btn {
-    background-color: #1b9db8;
+    background-color: #48cae4;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 0.5rem 1rem;
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.2s ease;
+}
+
+.start {
+    background-color: #48cae4;
+    text-transform: uppercase;
+    color: #0a061d;
+    padding: 18px 30px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.btn-projets {
+    background-color: #303030;
+    color: #ffffff;
+    width: 10%;
+    padding: 8px 10px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.2s ease;
+}
+
+/* chart section */
+
+.charts-title {
+    padding-bottom: 150px;;
 }
 
 
@@ -258,6 +397,13 @@ section {
 .wrapper article {
     width: 50%;
 }
+
+/* podium section */
+
+.podium-title {
+    padding-bottom: 150px;;
+}
+
 
 /* Style pour la carte SVG a choisir */
 #europeanMap {
@@ -280,7 +426,6 @@ path {
 /* Style pour les tooltips */
 .tooltip {
     position: absolute;
-    background-color: #1d1d1d;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;

@@ -16,13 +16,25 @@
     <!-- favicons -->
     <link rel="icon" href="img/damsoviz-logo.png">
     <title>DamsoViz</title>
+
 </head>
 
 <body>
-    <header class="scroll">
+    <header class="scroll header">
         <img class="black" src="img/logo.png">
-        <div class="start"><a href="#discoverdamso">Explore now</a></div>
+        <div class="start"><a href="#about">Explore now</a></div>
     </header>
+
+    <!-- a propos de nous -->
+
+    <section class="scroll about" id="about">
+        <article class="black" data-aos="fade-in" data-aos-delay="500">
+            <h2 class="blue" style="display: inline;">DATAVIZ,</h2>
+            <h3 style="display: inline;"> NOTRE PROJET ÉTUDIANT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus lorem mi, sit amet tempor nulla ullamcorper vel. Maecenas augue turpis, auctor vitae ante in, sollicitudin mattis turpis. Donec venenatis leo in sapien sollicitudin, id molestie dolor viverra. In facilisis enim eget neque tincidunt vestibulum. Vivamus lacus urna, aliquam vitae auctor rhoncus, facilisis sit amet nunc. Maecenas a
+            </p>
+        </article>
+    </section>
 
     <!-- qui est damso ? -->
 
@@ -31,51 +43,79 @@
             <img src="img/lithopedion.jpeg" alt="">
             <article>
                 <h1>Damso</h1>
-                <h3><b>12000</b> auditeurs</h3>
+                <h3><b>5 078 166</b> auditeurs mensuels ○ <b>116</b> musiques</h3>
             </article>
         </div>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fuga ipsum, voluptatibus dolor
-            eius quam et vitae ullam eveniet ratione, blanditiis obcaecati totam delectus optio, nobis natus beatae amet
-            voluptatum?</p>
-
+        <div class="info">
+            <div class="lead">
+                <p>William Kalubi dit Damso, né le 11 Mai 1992 à Kinshasa (Congo), est un auteur, interprète et compositeur bruxellois. Il est un membre du groupe OPG. Ce groupe de rap formé en 2006, à la base, par Dolfa et lui-même ; par la suite Rex, Ducke et Lio Brown ont rejoint le groupe.</p>
+            </div>
+            <div class="lead2">
+                <h4>Date de naissance</h4>
+                <p>10 Mai 1992 (31 ans)</p>
+                <h4>Lieu de naissance</h4>
+                <p>Kinshasa, RDC</p>
+            </div>
+            <div class="lead3">
+                <div>
+                    <img class="card-img-top" src="img/macarena.png" alt="">
+                </div>
+                <div>
+                    <h4>0. Macarena</h4>
+                    <p>Ipséité ○ 2017</p>
+                    <h4>200 953 446 streams</h4>
+                </div>
+                
+            </div>
+        </div>
+        
+    <div class="projets">
+        <div class="btn-projets">
+            <h4>Projets</h4>
+        </div>
         <div class="row">
             <div class="card">
-                <img class="card-img-top" src="img/batterie faible.jpg" alt="Card image cap">
+                <img class="card-img" src="img/batterie faible.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Batterie Faible</h5>
                     <p class="card-text">Album, 2016</p>
-                    <a href="#" class="btn btn-primary">Plus d'informations</a>
+                    <a href="#" class="btn btn-primary"> Écouter  ▶</a>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/ipseite.jpeg" alt="Card image cap">
+                <img class="card-img" src="img/ipseite.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Ipséité</h5>
                     <p class="card-text">Album, 2017</p>
-                    <a href="#" class="btn btn-primary">Plus d'informations</a>
+                    <a href="#" class="btn btn-primary">Écouter  ▶</a>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/lithopedion.jpeg" alt="Card image cap">
+                <img class="card-img" src="img/lithopedion.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Lithopédion</h5>
                     <p class="card-text">Album, 2018</p>
-                    <a href="#" class="btn btn-primary">Plus d'informations</a>
+                    <a href="#" class="btn btn-primary">Écouter  ▶</a>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/qalf.jpeg" alt="Card image cap">
+                <img class="card-img" src="img/qalf.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">QALF infinity</h5>
                     <p class="card-text">Réédition, 2021</p>
-                    <a href="#" class="btn btn-primary">Plus d'informations</a>
+                    <a href="#" class="btn btn-primary">Écouter  ▶</a>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
-    <section class="scroll data_charts">
-        <h2>Évolution du nombre d'auditeurs sur Spotify</h2>
+    <section class="scroll data_charts" id="charts">
+        <div class="charts-title">
+            <h2>
+                Évolution du nombre d'auditeurs sur Spotify
+            </h2>
+        </div>
         <canvas id="auditeursChart" width="400" height="200"></canvas>
     </section>
 
@@ -99,22 +139,74 @@
 
     <!-- podium best cities -->
     <section class="scroll podium_section">
-        <h2>Top 4 des Villes avec le Nombre d'auditeurs</h2>
+        <div class="podium-title">
+            <h2>Top 4 des Villes avec le plus d'auditeurs de Damso
+            </h2>
+        </div>
         <canvas id="myChart" width="400" height="200"></canvas>
     </section>
 
-    <footer class="scroll">
-        <div class="footer_credits">
-            <p>Crédits</p>
-            <p>Maxime Scholtes</p>
-            <p>Patrick Faure</p>
+    <!-- credits -->
+
+    <footer class="scroll footer">
+        <div>
+            <article>
+
+                <h2 data-aos="fade-in" data-aos-delay="500">DAMSOVIZ</h2>
+                <h4 data-aos="fade-in" data-aos-delay="1000">Un porjet étudiant réalisé par <b>Patrick FAURE, Maxime SCHOLTES</b></h4>
+            </article>
+            <article data-aos="fade-in" data-aos-delay="1500">
+                <h3>Données et Mentions Légales</h3>
+                <ul>
+                    <li>Departure Board - <a href="https://travelness.com/most-visited-countries-in-the-world"
+                            target="_blank">Top 10 International arrivals of 2022</a></li>
+                    <li>World Map - <a
+                            href="https://www.statista.com/statistics/186743/international-tourist-arrivals-worldwide-by-region-since-2010/"
+                            target="_blank">Number of international arrivals worldwide before and after Covid19,
+                            by
+                            region</a></li>
+
+                    <li>SVG World Map - <a href="https://codepen.io/evanfleet/pen/bELeoN" target="_blank">Template by
+                            Evan Fleet</a>
+                    </li>
+                    <li>Podium - <a
+                            href="https://www.youtube.com/watch?v=RNPoU8tehRQ&list=LL&index=1&ab_channel=WorldReports"
+                            target="_blank">Top 3 most visited countries over the years - World Reports</a></li>
+                    <li>People - <a href="https://www.enduringwanderlust.com/why-do-people-travel-chart/"
+                            target="_blank">Why do people travel</a></li>
+                </ul>
+            </article>
+
         </div>
-        <div class="footer_sources">
-            <p>Sources</p>
-            <p>https://www.data.gouv.fr/fr/datasets/audience-des-radios-en-france/</p>
-            <p>https://www.data.gouv.fr/fr/datasets/audience-des-radios-en-france/</p>
-            <p>https://www.data.gouv.fr/fr/datasets/audience-des-radios-en-france/</p>
+        <div>
+            <article data-aos="fade-in" data-aos-delay="2000">
+                <h3>Legislation on personal data</h3>
+                <p><b>Host :</b> github.com - 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br><br>
+                    As part of a student project, this website is edited by <b>Gustave Eiffel University of Champs sur
+                        Marne</b>
+                    and represented by its President.
+                    <br><br>
+                    This website constitutes a work of the spirit within the meaning of the <b>Code of the Intellectual
+                        Property</b> and will remain in the context of university projects : no media will be used for
+                    commercial use.
+                </p>
+            </article>
+            <article data-aos="fade-in" data-aos-delay="2500">
+                <h3>More projects</h3>
+                <ul class="social-media">
+                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/amelchabah/"
+                            target="_blank">github.com/amelchabah</a></li>
+                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/eleaacrt"
+                            target="_blank">github.com/eleacrunchant</a></li>
+                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/aalscx/"
+                            target="_blank">github.com/ambrelascoux</a></li>
+                </ul>
+
+            </article>
+
+
         </div>
+    </footer>
 </body>
 
 </html>
