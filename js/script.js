@@ -68,7 +68,7 @@ function displayAuditeursData(dataAuditeurs) {
                 label: 'Nombre d\'auditeurs sur Spotify',
                 data: auditeurs,
                 borderColor: '#48CAE4',
-                borderWidth: 1,
+                borderWidth: 4,
             }]
         },
         options: {
@@ -140,7 +140,7 @@ function configureMapEvents(dataMap) {
 
             // afficher le nombre d'auditeurs moyens en 2023 dans l'élément h1
             infoContainer.textContent = `${countryName} : ${auditeursmensuel}`;
-            infoDescription.textContent = `En 2023, le nombres d'auditeurs moyens par mois sur Spotify pour le rappeur Belge Damso en ${countryName} était de ${auditeursmensuel}.`;
+            infoDescription.textContent = `En 2023, le nombres d'auditeurs moyens par mois sur Spotify pour le rappeur belge Damso en ${countryName} était de ${auditeursmensuel}.`;
 
             // stockage du pays actuellement sélectionné
             lastSelectedCountry = country;

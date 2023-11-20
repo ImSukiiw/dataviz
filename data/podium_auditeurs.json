@@ -2,18 +2,18 @@
     "year": 2023,
     "top1": {
         "city": "Paris",
-        "auditeurs": 966.118
+        "auditeurs": 966118
     },
     "top2": {
         "city": "Bruxelles",
-        "auditeurs": 254.835
+        "auditeurs": 254835
     },
     "top3": {
         "city": "Lyon",
-        "auditeurs": 210.888
+        "auditeurs": 210888
     },
     "top4": {
         "city": "Bordeaux",
-        "auditeurs": 140.264
+        "auditeurs": 140264
     }
 }
