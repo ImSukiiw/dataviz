@@ -1,13 +1,13 @@
 {
-        "france": 2625610,
-        "belgique": 389532,
-        "suisse": 176625,
-        "angleterre": 14621,
-        "pays-bas": 19555,
-        "danemark": 169,
-        "allemagne": 33365,
-        "portugal": 9359,
-        "espagne": 25992,
-        "italie": 16095,
-        "europeast": "Moins de 1000"
+        "france": "2,625,610",
+        "belgique": "389,532",
+        "suisse": "176,625",
+        "angleterre": "14,621",
+        "pays-bas": "19,555",
+        "danemark": "169",
+        "allemagne": "33,365",
+        "portugal": "9,359",
+        "espagne": "25,992",
+        "italie": "16,095",
+        "europeast": "environ 50,000"
 }

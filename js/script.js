@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+      AOS.init();
+
+
     // récupérer les données de chaque json et les renvoyer dans 3 fonctions :
 
     // - displayAuditeursData
