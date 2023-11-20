@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // 1. récupérer les données de chaque json et les renvoyer dans 3 fonctions :
+    // récupérer les données de chaque json et les renvoyer dans 3 fonctions :
 
     // - displayAuditeursData
     // - createEuropeanMap
     // - createHorizontalBarChart
 
 
-    // import map.svg depuis le dossier img pour optimiser le index.html
+    // on importe le map.svg pour optimiser le index.html
     fetch('img/map.svg')
         .then(response => response.text())
         .then(svg => {
-            // Ajouter le contenu du fichier SVG dans la page HTML
+            // add le contenu du map.svg dans le index.html
             document.getElementById('europeanMap').innerHTML = svg;
         })
         .catch(error => console.error('Erreur lors du chargement du fichier SVG :', error));
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('data/auditeurs_charts.json')
         .then(response => response.json())
         .then(dataAuditeurs => {
-            // Appel de la fonction pour afficher les données dans la page HTML
+            // fonction d'appel des données dans l'index.html
             displayAuditeursData(dataAuditeurs);
         })
         .catch(error => console.error('Erreur lors du chargement des données :', error));
@@ -36,10 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('data/podium_auditeurs.json')
         .then(response => response.json())
         .then(dataPodium => {
-            // Stocker les données globalement
             window.dataPodium = dataPodium;
 
-            // Créer le graphique initial
+            // création du graphique
             createHorizontalBarChart(2016);
         })
         .catch(error => console.error('Erreur lors du chargement des données :', error));
@@ -48,15 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Fonctions pour afficher les données dans la page HTML
+// fonctions pour afficher les données dans le index.html
 
 // auditeurs charts
 function displayAuditeursData(dataAuditeurs) {
-    // Séparer les dates et les auditeurs pour les utiliser avec Chart.js
+    // séparer les dates des auditeurs pour les utiliser avec chart.hs
     const dates = dataAuditeurs.map(entry => entry.date);
     const auditeurs = dataAuditeurs.map(entry => entry.auditeurs);
 
-    // Configuration du graphique
+    // config du graphique
     const ctx = document.getElementById('auditeursChart').getContext('2d');
     const auditeursChart = new Chart(ctx, {
         type: 'line',
@@ -91,7 +90,7 @@ function displayAuditeursData(dataAuditeurs) {
                         autoSkip: true,
                         maxTicksLimit: 20
                     }
-                
+
                 },
                 y: {
                     beginAtZero: true,
@@ -111,36 +110,36 @@ function displayAuditeursData(dataAuditeurs) {
 
 // carte de l'europe
 
-// Fonction pour configurer les événements de survol après le chargement de la carte
+// fonction pour configurer les événements de survol après le chargement de la carte
 function configureMapEvents(dataMap) {
-    let lastSelectedCountry; // Variable pour stocker le dernier pays sélectionné
-    const initialColors = {}; // Objet pour stocker les couleurs initiales de chaque pays
+    let lastSelectedCountry; // variable pour stocker le dernier pays sélectionné
+    const initialColors = {}; // objet pour stocker les couleurs initiales de chaque pays
 
     document.querySelectorAll('.country').forEach(country => {
         const countryName = country.id;
-        const population = dataMap[countryName];
+        const auditeursmensuel = dataMap[countryName];
 
-        // Stockez la couleur initiale du pays
+        // stockez la couleur initiale du pays
         initialColors[countryName] = country.style.fill;
 
         country.addEventListener('click', () => {
-            // Sélectionnez l'élément h1 où vous souhaitez afficher les informations
+            // sélection du h1 où va s'insérer les données
             const infoContainer = document.getElementById('infoContainer');
             const infoDescription = document.getElementById('infoDescription');
 
-            // Restaurez la couleur du dernier pays sélectionné (s'il y en a un)
+            // restaurez la couleur du dernier pays sélectionné (s'il y en a un)
             if (lastSelectedCountry) {
                 lastSelectedCountry.style.fill = initialColors[lastSelectedCountry.id];
             }
 
-            // Mettez à jour la couleur du pays actuellement sélectionné
+            // mise a jour du pays sélectionner actuellement
             country.style.fill = '#48CAE4';
 
-            // Affichez le nombre de population dans l'élément h1
-            infoContainer.textContent = `${countryName} : ${population}`;
-            infoDescription.textContent = `En 2023, la population de ${countryName} était de ${population} habitants.`;
+            // afficher le nombre d'auditeurs moyens en 2023 dans l'élément h1
+            infoContainer.textContent = `${countryName} : ${auditeursmensuel}`;
+            infoDescription.textContent = `En 2023, le nombres d'auditeurs moyens par mois sur Spotify pour le rappeur Belge Damso en ${countryName} était de ${auditeursmensuel} auditeurs mensuels moyens.`;
 
-            // Stockez la référence du pays actuellement sélectionné
+            // stockage du pays actuellement sélectionné
             lastSelectedCountry = country;
         });
 
@@ -154,7 +153,7 @@ let myChart;
 function createHorizontalBarChart(selectedYear) {
     const cities = ['top1', 'top2', 'top3', 'top4'];
 
-    // Configuration du graphique
+    // config du graphique
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',

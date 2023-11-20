@@ -237,7 +237,7 @@ footer .social {
 .presentation {
     display: flex;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .presentation img {
@@ -272,19 +272,19 @@ footer .social {
 }
 
 .lead p {
-    font-size: 1.2em;
     text-align: justify;
 }
+
 .lead2 p {
-    font-size: 1.2em;
     text-align: justify;
 }
+
 .lead3 p {
     font-size: 1.2em;
     text-align: justify;
 }
 
-.info { 
+.info {
     padding-top: 20px;
     height: 150px;
     display: flex;
@@ -293,14 +293,14 @@ footer .social {
 
 }
 
-.lead3 { 
+.lead3 {
     display: flex;
 }
 
 .row {
     display: flex;
     justify-content: space-around;
-    gap: 8rem;
+    gap: 2rem;
     margin: auto;
     margin-top: 2rem;
 }
@@ -308,14 +308,7 @@ footer .social {
 .projets {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
 }
-
-.btn-projets h4 {
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 .card {
     width: 50%;
     background-color: #242424;
@@ -325,7 +318,7 @@ footer .social {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .card-body {
@@ -334,12 +327,12 @@ footer .social {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .card-img-top {
-    width: 100%;
-    height: 90%;
+    width: auto;
+    height: 120px;
     padding-right: 20px;
 }
 
@@ -376,7 +369,8 @@ footer .social {
     width: 10%;
     padding: 8px 10px;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     display: flex;
     justify-content: space-around;
     transition: 0.2s ease;
@@ -385,7 +379,8 @@ footer .social {
 /* chart section */
 
 .charts-title {
-    padding-bottom: 150px;;
+    padding-bottom: 150px;
+    ;
 }
 
 
@@ -406,7 +401,8 @@ footer .social {
 /* podium section */
 
 .podium-title {
-    padding-bottom: 150px;;
+    padding-bottom: 150px;
+    ;
 }
 
 
