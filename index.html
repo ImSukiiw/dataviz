@@ -25,7 +25,7 @@
 <body>
     <header class="scroll header">
         <img class="black" src="img/logo.png">
-        <div class="start"><a href="#about">Découvrir</a></div>
+        <div class="start btn"><a href="#about">Découvrir</a></div>
     </header>
 
     <!-- a propos de nous -->
@@ -33,8 +33,8 @@
     <section class="scroll about" id="about">
         <article class="black" data-aos="fade-in" data-aos-delay="500">
             <h2 class="blue">DATAVIZ,</h2>
-            <h3 style="display: inline;"> NOTRE PROJET ÉTUDIANT</h3>
-            <p>DataViz est le projet de Dévelopement Web de notre 3ème semestre de BUT MMI. Son objectif est de créer
+            <h3> NOTRE PROJET ÉTUDIANT</h3>
+            <p>DataViz est le projet de dévelopement web de notre 3ème semestre de BUT MMI. Son objectif est de créer
                 une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas,
                 nous avons choisi comme thème le rappeur Belge Damso et avons décider d'afficher des données sur
                 l'évolution de ses stats au fil du temps.</p>
@@ -42,7 +42,6 @@
     </section>
 
     <!-- qui est damso ? -->
-
     <section class="scroll disco-damso" id="discoverdamso">
         <div class="presentation" data-aos="fade-in" data-aos-delay="300">
             <img src="img/discographie-damso.png" alt="">
@@ -76,9 +75,7 @@
 
         <div class="projets" data-aos="fade-in" data-aos-delay="300">
             <a target="_blank" href="https://open.spotify.com/intl-fr/artist/2UwqpfQtNuhBwviIC0f2ie/discography/album"
-                class="btn-projets">
-                Projets
-            </a>
+                class="btn-projets"> Projets</a>
             <div class="row">
                 <div class="card">
                     <img class="card-img" src="img/batterie faible.jpg" alt="Card image cap">
@@ -87,7 +84,7 @@
                         <p class="card-text">Album, 2016</p>
                         <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/4beTtJKeg3ITJsiVuxkiV0"
-                            class="btn btn-primary"> Écouter ▶</a>
+                            class="btn"> Écouter ▶</a>
                     </div>
                 </div>
                 <div class="card">
@@ -97,7 +94,7 @@
                         <p class="card-text">Album, 2017</p>
                         <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/7ovdjtmV0Bkm4Xb4pqtrZt"
-                            class="btn btn-primary">Écouter ▶</a>
+                            class="btn">Écouter ▶</a>
                     </div>
                 </div>
                 <div class="card">
@@ -107,7 +104,7 @@
                         <p class="card-text">Album, 2018</p>
                         <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/2zgjFPyhn0cMxKzW2IiGUT"
-                            class="btn btn-primary">Écouter ▶</a>
+                            class="btn">Écouter ▶</a>
                     </div>
                 </div>
                 <div class="card">
@@ -117,7 +114,7 @@
                         <p class="card-text">Réédition, 2021</p>
                         <br>
                         <a target="_blank" href="https://open.spotify.com/intl-fr/album/5Sb84P0BZuvCnYV0xJcNT1"
-                            class="btn btn-primary">Écouter ▶</a>
+                            class="btn">Écouter ▶</a>
                     </div>
                 </div>
             </div>
@@ -137,14 +134,18 @@
     <section class="scroll map_section">
         <h2 data-aos="fade-in">Statistiques par Pays</h2>
         <div class="wrapper" data-aos="fade-in" data-aos-delay="300">
-            <article>
-                <h3 id="infoContainer">Clique sur un pays!</h3>
-                <br>
-                <p id="infoDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt vero omnis
-                    rem inventore
-                    repudiandae aperiam incidunt accusamus quod quis. Quod, magni obcaecati. Veniam quis error deleniti
-                    aspernatur itaque at.</p>
-            </article>
+            <div class="article-line">
+                <article>
+                    <h3 id="infoContainer">Clique sur un pays!</h3>
+                    <br>
+                    <p id="infoDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt vero
+                        omnis
+                        rem inventore
+                        repudiandae aperiam incidunt accusamus quod quis. Quod, magni obcaecati. Veniam quis error
+                        deleniti
+                        aspernatur itaque at.</p>
+                </article>
+            </div>
             <div id="europeanMap" data-aos="fade-in" data-aos-delay="300"></div>
         </div>
 

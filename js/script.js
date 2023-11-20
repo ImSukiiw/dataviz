@@ -68,7 +68,7 @@ function displayAuditeursData(dataAuditeurs) {
                 label: 'Nombre d\'auditeurs sur Spotify',
                 data: auditeurs,
                 borderColor: '#48CAE4',
-                borderWidth: 1,
+                borderWidth: 4,
             }]
         },
         options: {
