@@ -143,6 +143,11 @@ ul {
     line-height: 1.2em;
 }
 
+.blue {
+    display: inline;
+    color: #48CAE4;
+}
+
 /* links */
 
 a {
