@@ -141,6 +141,11 @@ ul {
 .blue {
     display: inline;
     color: #48CAE4;
+    font-size: 3.5rem;
+}
+
+.white  {
+    display: inline;
 }
 
 /* links */
@@ -397,7 +402,7 @@ article p {
     background-color: #48cae4;
     text-transform: uppercase;
     color: #0a061d;
-    padding: 18px 30px;
+    padding: 8px 30px;
     border-radius: 50px;
     font-size: 1.5rem;
     transition: 0.5s ease;
@@ -420,7 +425,7 @@ article p {
 /* chart section */
 
 .charts-title {
-    padding-bottom: 150px;
+    padding-bottom: 3rem;
     ;
 }
 
@@ -450,14 +455,14 @@ article p {
 /* podium section */
 
 .podium-title {
-    padding-bottom: 150px;
+    padding-bottom: 3rem;
     ;
 }
 
 
 /* Style pour la carte SVG a choisir */
 #europeanMap {
-    width: 40%;
+    width: 90%;
     height: auto;
     display: flex;
     gap: 2rem;

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css et script js -->
+    <!-- css / script js / aos / chart.js -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/script.js" type="module" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <!-- favicons -->
+    <!-- favicons et titre -->
     <link rel="icon" type="image/ico" href="./img/damsoviz-logo.ico">
     <title>DamsoViz</title>
 
@@ -28,16 +28,12 @@
         <div class="start btn"><a href="#about">Découvrir</a></div>
     </header>
 
-    <!-- a propos de nous -->
-
+    <!-- a propos du projet -->
     <section class="scroll about" id="about">
         <article class="black" data-aos="fade-in" data-aos-delay="500">
             <h2 class="blue">DATAVIZ,</h2>
-            <h3> NOTRE PROJET ÉTUDIANT</h3>
-            <p>DataViz est le projet de dévelopement web de notre 3ème semestre de BUT MMI. Son objectif est de créer
-                une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas,
-                nous avons choisi comme thème le rappeur Belge Damso et avons décider d'afficher des données sur
-                l'évolution de ses stats au fil du temps.</p>
+            <h2 class="white"> NOTRE PROJET ÉTUDIANT</h2>
+            <p>DataViz est le projet de développement web de notre 3ème semestre de BUT MMI. Son objectif est de créer une page web qui permettra de visualiser des données à propos d'un phénomène qui évolue. Dans notre cas, nous avons choisi comme thème le rappeur Belge Damso et avons décidé d'afficher des données sur l'évolution de ses statistiques au fil du temps. Nous sommes un duo, Patrick Faure et Maxime Scholtes, et nous sommes dans le parcours création numérique du BUT MMI.</p>
         </article>
     </section>
 
@@ -52,9 +48,7 @@
         </div>
         <div class="info" data-aos="fade-in" data-aos-delay="300">
             <div class="lead">
-                <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et
-                    auteur-compositeur-interprète belgo-congolais. Actif dans le monde du rap depuis 2006, Damso débute
-                    dans la publication de projets avec sa première mixtape Salle d'attente, sortie en 2014.</p>
+                <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa, est un rappeur et auteur-compositeur-interprète belgo-congolais. Actif dans le monde du rap depuis 2006, Damso débute dans la publication de projets avec sa première mixtape, "Salle d'attente", sortie en 2014.</p>
             </div>
             <div class="lead2" data-aos="fade-in" data-aos-delay="300">
                 <h4>Date de naissance</h4>
@@ -121,22 +115,22 @@
         </div>
     </section>
 
+    <!-- graphique évolution du nb d'auditeurs -->
     <section class="scroll data_charts" id="charts">
         <div class="charts-title" data-aos="fade-in" data-aos-delay="300">
-            <h2>
-                Évolution du nombre d'auditeurs sur Spotify
-            </h2>
+            <h2>Évolution du nombre d'auditeurs sur Spotify</h2>
+            <p>Cette représentation de donnée consiste en l'évolution du nombres d'auditeurs en fonction du temps de Damso. On y retrouve les données de tous les mois de Mai 2019 jusqu'à Août 2023.</p>
         </div>
         <canvas id="auditeursChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
     </section>
 
-
+    <!-- carte de l'europe -->
     <section class="scroll map_section">
-        <h2 data-aos="fade-in">Statistiques par Pays</h2>
+        <h2 data-aos="fade-in">Nombres d'auditeurs par pays en Octobre 2023</h2>
         <div class="wrapper" data-aos="fade-in" data-aos-delay="300">
             <div class="article-line">
                 <article>
-                    <h3 id="infoContainer">Clique sur un pays!</h3>
+                    <h3 id="infoContainer">Clique sur un pays !</h3>
                     <br>
                     <p id="infoDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt vero
                         omnis
@@ -152,75 +146,18 @@
     </section>
 
 
-    <!-- podium best cities -->
+    <!-- top 4 des villes avec le plus d'écoute -->
     <section class="scroll podium_section">
         <div class="podium-title" data-aos="fade-in" data-aos-delay="300">
-            <h2>Top 4 des Villes avec le plus d'auditeurs de Damso
-            </h2>
+            <h2>Top 4 des Villes avec le plus d'auditeurs en 2023</h2>
+            <p>L'histogramme ci-dessous montre les 4 villes où Damso est le plus écoutés dans le monde en 2023. Ce sont les données du mois d'Octobre 2023, il n'y a pas de données concernant les périodes précédentes.</p>
         </div>
         <canvas id="myChart" width="400" height="200" data-aos="fade-in" data-aos-delay="300"></canvas>
     </section>
 
     <!-- footer -->
     <footer class="scroll footer" data-aos="fade-in" data-aos-delay="300">
-        <div>
-            <article>
 
-                <h2 data-aos="fade-in" data-aos-delay="500">DAMSOVIZ</h2>
-                <h4 data-aos="fade-in" data-aos-delay="1000">Un porjet étudiant réalisé par <b>Patrick FAURE, Maxime
-                        SCHOLTES</b></h4>
-            </article>
-            <article data-aos="fade-in" data-aos-delay="1500">
-                <h3>Données et Mentions Légales</h3>
-                <ul>
-                    <li>Departure Board - <a href="https://travelness.com/most-visited-countries-in-the-world"
-                            target="_blank">Top 10 International arrivals of 2022</a></li>
-                    <li>World Map - <a
-                            href="https://www.statista.com/statistics/186743/international-tourist-arrivals-worldwide-by-region-since-2010/"
-                            target="_blank">Number of international arrivals worldwide before and after Covid19,
-                            by
-                            region</a></li>
-
-                    <li>SVG World Map - <a href="https://codepen.io/evanfleet/pen/bELeoN" target="_blank">Template by
-                            Evan Fleet</a>
-                    </li>
-                    <li>Podium - <a
-                            href="https://www.youtube.com/watch?v=RNPoU8tehRQ&list=LL&index=1&ab_channel=WorldReports"
-                            target="_blank">Top 3 most visited countries over the years - World Reports</a></li>
-                    <li>People - <a href="https://www.enduringwanderlust.com/why-do-people-travel-chart/"
-                            target="_blank">Why do people travel</a></li>
-                </ul>
-            </article>
-
-        </div>
-        <div>
-            <article data-aos="fade-in" data-aos-delay="2000">
-                <h3>Legislation on personal data</h3>
-                <p><b>Host :</b> github.com - 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br><br>
-                    As part of a student project, this website is edited by <b>Gustave Eiffel University of Champs sur
-                        Marne</b>
-                    and represented by its President.
-                    <br><br>
-                    This website constitutes a work of the spirit within the meaning of the <b>Code of the Intellectual
-                        Property</b> and will remain in the context of university projects : no media will be used for
-                    commercial use.
-                </p>
-            </article>
-            <article data-aos="fade-in" data-aos-delay="2500">
-                <h3>More projects</h3>
-                <ul class="social-media">
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/amelchabah/"
-                            target="_blank">github.com/amelchabah</a></li>
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/eleaacrt"
-                            target="_blank">github.com/eleacrunchant</a></li>
-                    <li><img class="social" src="img/icons/github.png"><a href="https://github.com/aalscx/"
-                            target="_blank">github.com/ambrelascoux</a></li>
-                </ul>
-
-            </article>
-
-
-        </div>
     </footer>
 </body>
 
